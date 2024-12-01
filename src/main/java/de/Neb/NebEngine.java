@@ -108,8 +108,6 @@ public class NebEngine implements Runnable {
                 if (renderer != null) {
                     renderer.clear();
 
-                    System.out.println("Fps: " +fps);
-
                     if (game != null) {
                         game.render(this, renderer);
                     }
