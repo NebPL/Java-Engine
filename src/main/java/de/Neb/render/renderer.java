@@ -1,7 +1,10 @@
-package de.Neb;
+package de.Neb.render;
+
+import de.Neb.Input;
+import de.Neb.NebEngine;
+import de.Neb.Window;
 
 import java.awt.image.DataBufferInt;
-import java.util.Locale;
 
 
 public class renderer {
@@ -32,7 +35,6 @@ public class renderer {
         p[x + y * pW] = value;
     }
 
-    //
     public void fillRect(int offX, int offY, int x2, int y2, int color) {
         int startX = Math.min(offX, x2);
         int endX = Math.max(offX, x2);
@@ -46,16 +48,13 @@ public class renderer {
         }
     }
 
-
     public void drawBoarder(int x, int y, int width, int height, int lineThickness,int color){
-        fillRect(x, y, x + width, y + lineThickness, color);
 
+        fillRect(x, y, x + width, y + lineThickness, color);
         // Untere Linie
         fillRect(x, y + height - lineThickness, x + width, y + height, color);
-
         // Linke Linie
         fillRect(x, y, x + lineThickness, y + height, color);
-
         // Rechte Linie
         fillRect(x + width - lineThickness, y, x + width, y + height, color);
     }

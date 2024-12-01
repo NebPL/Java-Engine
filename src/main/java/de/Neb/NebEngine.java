@@ -1,8 +1,6 @@
 package de.Neb;
 
-import de.Neb.Input;
-import de.Neb.Window;
-import de.Neb.renderer;
+import de.Neb.render.renderer;
 
 /**
  * Main Engine Fiele
@@ -21,6 +19,11 @@ public class NebEngine implements Runnable {
     private int height = 800;
     private float scale = 1f;
     private String title = "Game";
+    public double GameVersion = 1.0;
+
+    public double getGameVersion(){
+        return GameVersion;
+    }
 
     //When you init the engine you can put your engine and it will update automatic.
     public NebEngine(engine game) {this.game = game;}

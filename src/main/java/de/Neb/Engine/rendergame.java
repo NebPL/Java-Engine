@@ -1,16 +1,13 @@
 package de.Neb.Engine;
 
 import de.Neb.NebEngine;
-import de.Neb.Window;
 import de.Neb.engine;
-import de.Neb.renderer;
-
-import java.awt.*;
+import de.Neb.render.renderer;
 
 /// This is just a Test.
 ///
 /// This is just a Example.
-public class renderl extends engine {
+public class rendergame extends engine {
 
     ///Updates 60Fps your how fast you set it up
     @Override
@@ -23,3 +20,5 @@ public class renderl extends engine {
         r.drawBoarder(10,10,100,100,1,0xFFFFFF);
     }
 }
+
+
