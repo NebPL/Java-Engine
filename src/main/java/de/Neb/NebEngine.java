@@ -20,6 +20,11 @@ public class NebEngine implements Runnable {
     private float scale = 1f;
     private String title = "Game";
     public double GameVersion = 1.0;
+    public static int clearColor = 0x000000;
+
+    public static int getClearColor(){
+        return clearColor;
+    }
 
     public double getGameVersion(){
         return GameVersion;

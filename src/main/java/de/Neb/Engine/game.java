@@ -10,6 +10,7 @@ public class game {
         NebEngine e = new NebEngine(new rendergame());
         e.setHeight(1000);
         e.setWidth(1000);
+        e.clearColor = 0xFFFFFFFF;
         e.start();
     }
 }

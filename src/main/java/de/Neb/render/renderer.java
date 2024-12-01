@@ -6,6 +6,8 @@ import de.Neb.Window;
 
 import java.awt.image.DataBufferInt;
 
+import static de.Neb.NebEngine.getClearColor;
+
 
 public class renderer {
     private final int pW, pH;
@@ -22,7 +24,7 @@ public class renderer {
     //Setzt alle pixel auf Schwarz.
     public void clear() {
         for (int i = 0; i < p.length; i++) {
-            p[i] = 0x000000;
+            p[i] = getClearColor();
         }
     }
 
